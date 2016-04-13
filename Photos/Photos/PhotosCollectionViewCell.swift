@@ -16,7 +16,11 @@ class PhotosCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        imageView = UIImageView(frame: self.contentView.bounds)
+
+        imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height))
+        imageView.contentMode = UIViewContentMode.ScaleAspectFit
+        imageView.layer.borderWidth = 3.0
+        imageView.layer.borderColor = UIColor.blackColor().CGColor
         self.contentView.addSubview(imageView)
     }
     

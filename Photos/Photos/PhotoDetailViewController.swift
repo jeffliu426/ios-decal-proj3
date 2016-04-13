@@ -23,13 +23,17 @@ class PhotoDetailViewController: UIViewController {
     var heartTapped : Bool!
     var photo : Photo!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         imageView.image = image
         usernameLabel.text = username
         dateLabel.text = date
         likesLabel.text = likes + " likes"
+        self.view.backgroundColor = UIColor.lightGrayColor()
+        imageView.layer.borderWidth = 3.0
+        imageView.layer.borderColor = UIColor.blackColor().CGColor
+        
         if (heartTapped!) {
             heartButton.setTitle("💙", forState: UIControlState.Normal)
         }
@@ -59,25 +63,6 @@ class PhotoDetailViewController: UIViewController {
         defaults.synchronize()
     }
     
-//    override func viewWillDisappear(animated: Bool) {
-//        if (self.navigationController?.viewControllers.indexOf(self)==NSNotFound) {
-//            // back button was pressed.  We know this is true because self is no longer
-//            // in the navigation stack.
-//            
-//            saveData()
-//            
-//        }
-//        [super viewWillDisappear:animated];
-//    }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

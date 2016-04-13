@@ -64,25 +64,25 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2J-TO-vEm">
-                                <rect key="frame" x="205" y="171" width="79" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="205" y="162" width="111" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jue-yO-zQp">
-                                <rect key="frame" x="205" y="408" width="36" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="205" y="408" width="41" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tfu-SI-lUO">
-                                <rect key="frame" x="205" y="437" width="40" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="205" y="440" width="45" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcT-Ro-HwJ">
-                                <rect key="frame" x="283" y="468" width="35" height="54"/>
+                                <rect key="frame" x="283" y="464" width="35" height="54"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="💛"/>
                                 <connections>
@@ -93,7 +93,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="L91-14-W2t" firstAttribute="centerX" secondItem="L0k-gv-3Sv" secondAttribute="centerX" constant="5" id="GAi-gK-ng8"/>
-                            <constraint firstItem="fcT-Ro-HwJ" firstAttribute="top" secondItem="Tfu-SI-lUO" secondAttribute="bottom" constant="10" id="IY3-6Z-5m0"/>
+                            <constraint firstItem="fcT-Ro-HwJ" firstAttribute="top" secondItem="Tfu-SI-lUO" secondAttribute="bottom" id="IY3-6Z-5m0"/>
                             <constraint firstItem="Q2J-TO-vEm" firstAttribute="leading" secondItem="L91-14-W2t" secondAttribute="trailing" constant="-200" id="QWf-Zl-Oja"/>
                             <constraint firstItem="L91-14-W2t" firstAttribute="centerY" secondItem="L0k-gv-3Sv" secondAttribute="centerY" id="YOY-uw-oMy"/>
                             <constraint firstItem="L91-14-W2t" firstAttribute="top" secondItem="Q2J-TO-vEm" secondAttribute="bottom" constant="8" id="p1K-9R-3SH"/>

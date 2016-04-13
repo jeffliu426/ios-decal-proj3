@@ -19,6 +19,7 @@ class Photo: NSObject, NSCoding {
     var date : NSDate!
     /* Keeps track of whether the photo has been liked */
     var heartTapped : Bool!
+    /* Unique key for the photo in NSUserDefaults */
     var uuid : NSUUID
 
     /* Parses a NSDictionary and creates a photo object. */

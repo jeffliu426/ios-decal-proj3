@@ -20,6 +20,7 @@ class PhotosCollectionViewController: UICollectionViewController {
         self.collectionView!.delegate = self
         self.collectionView!.dataSource = self
         self.collectionView!.registerClass(PhotosCollectionViewCell.self, forCellWithReuseIdentifier: "PhotosCollectionViewCell")
+        self.collectionView?.backgroundColor = UIColor.lightGrayColor()
     }
 
     /* 
@@ -63,7 +64,7 @@ class PhotosCollectionViewController: UICollectionViewController {
                 if let cell = sender as? PhotosCollectionViewCell {
                     destination.photo = cell.photo
                     destination.image = cell.imageView.image
-                    var dateFormatter = NSDateFormatter()
+                    let dateFormatter = NSDateFormatter()
                     dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
                     dateFormatter.timeStyle = NSDateFormatterStyle.LongStyle
                     destination.date = "\(dateFormatter.stringFromDate(cell.photo.date))"
@@ -86,8 +87,7 @@ class PhotosCollectionViewController: UICollectionViewController {
         return false
     }
     
-    
-    
+
     /* Creates a session from a photo's url to download data to instantiate a UIImage. 
        It then sets this as the imageView's image. */
     func loadImageForCell(photo: Photo, imageView: UIImageView) {
